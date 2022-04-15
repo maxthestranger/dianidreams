@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `dianidreams`,
@@ -42,10 +46,9 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'content',
-        path: 'content',
+        path: `${__dirname}/content`,
+        name: `content`,
       },
-      __key: 'content',
     },
   ],
 };
