@@ -12,6 +12,11 @@ $trans: all 0.2s ease-in-out;
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-size: 12px;
   line-height: 24px;
@@ -22,6 +27,10 @@ body {
 }
 
 // general
+main {
+  min-height: calc(100vh - 88px);
+}
+
 .container {
   max-width: 920px;
   margin: 0 50px;
@@ -59,10 +68,10 @@ footer {
         height: 48px;
         justify-content: center;
         align-items: center;
-        color: $white;
         transition: $trans;
         &:hover {
           background: $primary;
+          fill: $white;
         }
       }
     }
