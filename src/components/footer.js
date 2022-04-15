@@ -4,15 +4,15 @@ export default function Footer() {
   const socials = [
     {
       href: 'https://www.facebook.com/dianidreams',
-      name: 'bi-meta',
+      name: 'meta',
     },
     {
       href: 'https://www.instagram.com/dianidreams',
-      name: 'bi-instagram',
+      name: 'instagram',
     },
     {
       href: 'https://www.twitter.com/dianidreams',
-      name: 'bi-twitter',
+      name: 'twitter',
     },
   ];
   return (
@@ -28,7 +28,7 @@ export default function Footer() {
             {socials.map((soc, i) => (
               <li key={i}>
                 <a href={soc.href}>
-                  <i className={soc.name} />
+                  <box-icon type="logo" name={soc.name}></box-icon>
                 </a>
               </li>
             ))}
