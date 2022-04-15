@@ -26,8 +26,8 @@ export default function Footer() {
             Rights Reserved.
           </p>
           <ul>
-            {socials.map((soc) => (
-              <li>
+            {socials.map((soc, i) => (
+              <li key={i}>
                 <a href={soc.href}>
                   <box-icon type="logo" name={soc.name}></box-icon>
                 </a>
